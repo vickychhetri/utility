@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/ctgroirh/erpct.ctgroup.co.in/
+    - /bin/cp -r * $DEPLOYPATH
