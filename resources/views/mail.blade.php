@@ -10,11 +10,8 @@
 
 </body>
 
-
-
 <h4>Hey {{$data['name']}},</h4>
-<br/>
-<br/>
+ <hr/>
 <table width="100%">
     <tbody>
         <tr>

@@ -57,10 +57,11 @@ class CVBankMailerController extends Controller
 
         $user['to']=$request->email;
         $user['subject']=$request->subject;
+        $user['updateMail']=$data["updateMail"];
 
         Mail::send('mail',array('data' => $data),function($messages) use ($user){
             $messages->to($user['to']);
-            $messages->subject($user['subject']);
+            $messages->subject($user['subject']." | ".$user['updateMail']);
         });
 
         if(count(Mail::failures()) > 0){
