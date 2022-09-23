@@ -52,13 +52,13 @@ class CVBankMailerController extends Controller
             "email"=>$request->email,
             "subject"=>$request->subject,
             "message"=>$request->message,
-            "update"=>Carbon::now()
+            "updateMail"=>Carbon::now()
         ];
 
         $user['to']=$request->email;
         $user['subject']=$request->subject;
 
-        Mail::send('mail',$data,function($messages) use ($user){
+        Mail::send('mail',array('data' => $data),function($messages) use ($user){
             $messages->to($user['to']);
             $messages->subject($user['subject']);
         });

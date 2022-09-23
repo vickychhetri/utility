@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>{{$data['subject']}} | {{$data['update']}} </title>
+    <title>{{$data["subject"]}} | {{$data["updateMail"]}} </title>
     <meta charset="UTF-8">
     <meta name="description" content="CT Group of Institutions">
     <meta name="keywords" content="CT Group of Institutions">
