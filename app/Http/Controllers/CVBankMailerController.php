@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\CVBankMailer;
 use Illuminate\Http\Request;
 use Mail;
+use Carbon\Carbon;
 class CVBankMailerController extends Controller
 {
     /**
@@ -51,6 +52,7 @@ class CVBankMailerController extends Controller
             "email"=>$request->email,
             "subject"=>$request->subject,
             "message"=>$request->message,
+            "update"=>Carbon::now()
         ];
 
         $user['to']=$request->email;
