@@ -17,7 +17,7 @@
         <tr>
             <td>
                 <blockquote>
-                    {{!! $data['message'] !!}}
+                    {{ $data['message'] }}
                 </blockquote>
                 <p><strong> CT Group of Institutions .</strong></p>
             </td>
