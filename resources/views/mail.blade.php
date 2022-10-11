@@ -13,12 +13,9 @@
     <tbody>
         <tr>
             <td>
-                <blockquote>
+                 
                     {!! $data['message'] !!}
-                </blockquote>
-
-                <hr/>
-                <p><strong> CT Group of Institutions .</strong></p>
+                 
             </td>
         </tr>
     </tbody>
